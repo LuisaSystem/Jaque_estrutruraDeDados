@@ -3,15 +3,13 @@ import java.util.Arrays;
 public class InsercaoDireta {
     public static void cartas(int[] vet){
 
-        for (int i = 0; i < vet.length + 2; i++) {
-            int posi = i;
-            for (int j = posi + i; j < vet.length; j++) {
-                int aux = j;
-                if (aux < posi){
-                    vet[j] = posi - aux;
-                    vet[i] = vet[j];
-                }
+        for (int i = 1; i < vet.length; i++) {
+            int posi = vet[i];
+            int j;
+            for (j = i-1; j >=0 && vet[j] > posi; j--) {
+                    vet[j+1] = vet[j];
             }
+             vet[j+1] = posi;
         }
     }
 
