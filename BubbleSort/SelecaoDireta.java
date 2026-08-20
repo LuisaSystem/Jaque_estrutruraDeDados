@@ -4,17 +4,18 @@ import java.util.Arrays;
 public class SelecaoDireta {
     public static void selecaoDireta(int[] vet){
 
-        for (int i = 0; i < vet.length; i++) {
-           // int menor = vet[i];
-           // int posi = i;
-            for (int j = 0; j < vet.length; j++) {
+        for (int i = 0; i < vet.length - 1; i++) {
+           int posi = i;
+            for (int j = posi + 1; j < vet.length; j++) {
                int menor = vet[0];
-               int posi = j;
                 if( vet[j]  <  menor){
-                    vet[i] = vet[j];
-
+                    posi = j;
                 }
             }
+
+            int temp = vet[i];
+            vet[i]  = vet[posi];
+            vet[posi] = temp;
         }
     }
 
