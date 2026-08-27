@@ -1,5 +1,3 @@
-import java.lang.reflect.Array;
-import java.util.Arrays;
 
 public class Buscabinaria {
     public static int busca(int[] num){
@@ -10,7 +8,6 @@ public class Buscabinaria {
                 return busca(num);
             }
         }
-        //return busca(num-num.length);
         return 0;
     }
 
