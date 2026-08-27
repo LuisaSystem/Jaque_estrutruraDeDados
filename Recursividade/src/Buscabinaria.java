@@ -19,7 +19,7 @@ public class Buscabinaria {
 
     public static void main(String[] args) {
         int[] x = {3, 7, 10, 25, 30, 47, 50};
-        int resp = busca(x, 0, x.length-1, 9);
+        int resp = busca(x, 3, x.length-1, 47);
         System.out.println("A busca foi? : "+resp);
     }
 }
