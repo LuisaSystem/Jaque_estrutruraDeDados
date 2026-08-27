@@ -1,5 +1,5 @@
 public class Potencial {
-    public static int pot(int expoente,  int base){
+    public static int pot(int base, int expoente){
         if (expoente == 0){
             return 1;
         }else {
@@ -8,8 +8,8 @@ public class Potencial {
     }
 
     public static void main(String[] args) {
-        int x = 4;
-        int y = 3;
+        int x = 2;
+        int y = 5;
         int resp = pot(x, y);
         System.out.println("Bah: " + resp);
     }
