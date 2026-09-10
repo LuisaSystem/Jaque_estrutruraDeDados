@@ -54,7 +54,9 @@ public class SequencialBi {
 
     // tamanho do vetor
     // 1. 10
-    public static final int tam = 10;
+    // 2. 100
+    // 3. 100.000
+    public static final int tam = 100000;
     public static void number(int[] vet){
         int j = 0;
         for (int i = 0; i < vet.length; i++) {
