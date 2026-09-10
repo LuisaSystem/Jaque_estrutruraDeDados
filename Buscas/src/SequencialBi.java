@@ -54,6 +54,7 @@ public class SequencialBi {
 
     // tamanho do vetor
     // 1. 10
+    public static final int tam = 10;
     public static void number(int[] vet){
         int j = 0;
         for (int i = 0; i < vet.length; i++) {
@@ -61,10 +62,10 @@ public class SequencialBi {
             j+=2;
         }
     }
-    public static final int tam = 10;
+
 
     public static void main(String[] args) {
-        int[] p = new int[tam] ;
+        int[] p = new int[tam];
         number(p);
 
         //SEQUENCIAL
