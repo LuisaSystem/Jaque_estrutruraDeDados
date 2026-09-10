@@ -69,8 +69,8 @@ public class SequencialBi {
         number(p);
 
         //SEQUENCIAL
-        long fim = System.nanoTime();
         long inicio = System.nanoTime();
+        long fim = System.nanoTime();
         long tempo = fim - inicio;
         double dura = tempo/1000000.0;
         sequencial(p);
@@ -80,8 +80,8 @@ public class SequencialBi {
         System.out.println("================================");
 
         //BUSCA - RECURSIVA
-        fim = System.nanoTime();
         inicio = System.nanoTime();
+        fim = System.nanoTime();
         tempo = fim - inicio;
         dura = tempo/1000000.0;
         busca(p, 0, p.length-1, 9);
@@ -91,8 +91,8 @@ public class SequencialBi {
         System.out.println("================================");
 
         //BUSCA - NÂO RECURSIVA
-        fim = System.nanoTime();
         inicio = System.nanoTime();
+        fim = System.nanoTime();
         tempo = fim - inicio;
         dura = tempo/1000000.0;
         buscaII(p,0, p.length-1, 9);
