@@ -45,4 +45,10 @@ public class LinkedList<T>{
         lista.append("10");
         System.out.println("Lista = "+ lista.print());
     }
+
+    private T print() {
+        return null;
+    }
+
+
 }
