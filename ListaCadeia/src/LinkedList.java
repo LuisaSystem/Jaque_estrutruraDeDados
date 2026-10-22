@@ -119,7 +119,7 @@ public class LinkedList<T>{
         lista.append("10");
         lista.append("12");
 
-        //as funções
+        //as funções - de 1 à 5
 
         // 1.
         System.out.println("Lista = "+ lista.print());
