@@ -66,11 +66,18 @@ public class LinkedList<T>{
     //adicionar elemento
     public String add(){
         Node<T> no = head;
-        String don = "";
+        String current = "";
+        String don;
         while (no != null){
-            don += no.data;
+            current += no.data;
+            don = no.next + "  ";
         }
-        return don;
+
+        if (no.next == null){
+            don = no.next + "  ";
+            current = don + head;
+        }
+        return current;
     }
 
     //posição
